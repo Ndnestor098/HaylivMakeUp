@@ -1,4 +1,6 @@
 import { Head, Link } from '@inertiajs/react';
+import Menu from '../Layouts/Menu';
+import LandingBanner from '../Components/LandingBanner';
 
 export default function Welcome({ auth, laravelVersion, phpVersion }) {
     const handleImageError = () => {
@@ -19,6 +21,10 @@ export default function Welcome({ auth, laravelVersion, phpVersion }) {
                 <meta name='description' content='Pagina De Hayliv Make Up'/>
             </Head>
             
+            <Menu />
+
+            <LandingBanner />
+
         </>
     );
 }
