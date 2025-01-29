@@ -1,8 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 export default function Menu({}) {
-    
-
+    const [menuIsVisible, setMenuIsVisible] = React.useState(false);
 
     return (
         <header className="s-header">
@@ -13,9 +12,9 @@ export default function Menu({}) {
                 </a>
             </div>
 
-            <div className="s-header__content">
+            <div className={menuIsVisible ? "s-header__content menu-visible" : "s-header__content"}>
         
-                <nav className="s-header__nav-wrap">
+                <nav className="s-header__nav-wrap" >
                     <ul className="s-header__nav">
                         <li><a className="smoothscroll" href="#hero" title="Intro">Home</a></li>
                         <li><a className="smoothscroll" href="#about" title="About">About</a></li>
@@ -31,7 +30,10 @@ export default function Menu({}) {
 
             </div>
 
-            <a className="s-header__menu-toggle" href="#0"><span>Menu</span></a>
+            <a className="s-header__menu-toggle" href="#0" onClick={()=>{
+                setMenuIsVisible(!menuIsVisible)
+                console.log(menuIsVisible)
+        }}><span>Menu</span></a>
 
         </header>
     )
