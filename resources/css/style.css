@@ -3003,7 +3003,7 @@ input::-moz-focus-inner {
     background-color: var(--color-bg);
 }
 
-.s-header .shadow {
+.shadow {
     box-shadow: var(--shadow-text);
 }
 

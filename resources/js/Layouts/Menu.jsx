@@ -1,10 +1,24 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
 export default function Menu({}) {
-    const [menuIsVisible, setMenuIsVisible] = React.useState(false);
+    const [menuIsVisible, setMenuIsVisible] = useState(false);
+    const [hasShadow, setHasShadow] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setHasShadow(window.scrollY > 0);
+            console.log(window.scrollY > 0)
+        };
+    
+        window.addEventListener("scroll", handleScroll);
+    
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []); 
 
     return (
-        <header className="s-header">
+        <header className={`s-header ${hasShadow ? "shadow" : ""}`}>
 
             <div className="s-header__logo">
                 <a href={route('home')}>
