@@ -4,7 +4,7 @@ export default function CardLayout(params) {
     return (
         <article className="card_layout">
             <div className="card_layout__image">
-                <a href="#">
+                <a href="#" className="card_layout__image__link">
                     <img src="https://cdn.pixabay.com/photo/2020/05/31/07/45/beauty-5241620_960_720.jpg" alt="" />
                 </a>
             </div>

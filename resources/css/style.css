@@ -6,12 +6,14 @@
 /* ------------------------------------------------------------------- 
  * ## fonts
  * ------------------------------------------------------------------- */
-
-@import url("https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i|Nunito+Sans:300,300i,400,400i,600,600i,700,700i&display=swap");
+ 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Nunito+Sans:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@100..900&display=swap');
 
 :root {
-    --font-1: "Nunito Sans", sans-serif;
-    --font-2: "Montserrat", sans-serif;
+    /* --font-1: "Nunito Sans", sans-serif;
+    --font-2: "Montserrat", sans-serif; */
+    --font-1: "Playfair Display", serif;
+    --font-2: "Poppins", sans-serif;
 
     /* monospace
     */
@@ -1540,7 +1542,7 @@ a:hover, a:active {
     --text-xs        = (12.50px)
 * -------------------------------------------------------------------- */
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-    font-family: var(--font-2);
+    font-family: var(--font-1 );
     font-weight: 500;
     font-style: normal;
     color: var(--color-text-dark);
@@ -3766,7 +3768,7 @@ html.no-csstransitions .s-hero__content {
     height: 100%;
     display: flex;
     flex-direction: column;
-    padding-top: 95px;
+    padding-top: 145px;
     gap: 20px;
 }
 
@@ -3774,16 +3776,57 @@ html.no-csstransitions .s-hero__content {
     font-size: 50px;
     font-weight: 900;
     color: var(--color-white);
+    font-family: var(--font-1);
+    letter-spacing: 5px;
+    margin: 0;
 }
 
 .card_layout__content .card_layout__content__text{
     color: #b4b4b5;
     font-size: 22px;
+    font-family: var(--font-2);
 }
 
 .card_layout .btn{
     background-color: var(--color-2);
     width: 200px;
+}
+
+@media screen and (max-width: 1000px) {
+    .card_layout{
+        flex-direction: column;
+    }
+
+    .card_layout__content{
+        padding-top: 20px !important;
+    }
+
+    .card_layout__image{
+        width: 100% !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card_layout__image img{
+        width:100vmax;
+    }
+
+    .card_layout .card_layout__content{
+        width: 100%;
+    }
+
+    .card_layout__content .card_layout__content__text{
+        font-size: 18px;
+    }
+
+    .card_layout__content .card_layout__content__title{
+        font-size: 40px;
+    }
+    
+    .card_layout .btn{
+        width: 100%;
+    }
 }
 
 /* ------------------------------------------------------------------- 
