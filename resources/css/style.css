@@ -4039,6 +4039,106 @@ html.no-csstransitions .s-hero__content {
 }
 
 /* ------------------------------------------------------------------- 
+* ## Footer
+* ------------------------------------------------------------------- */
+
+footer{
+    background-color: var(--color-black);
+    padding: 10px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    justify-content: space-evenly;
+}
+
+.footer a{
+    color: var(--color-gray-4);
+}
+
+.footer a:hover, .footer span:hover a{
+    color: var(--color-2);
+    transition: all ease .3s;
+}
+
+.footer div{
+    z-index: 100;
+}
+
+/* =================== parte 1 del Footer =================== */
+.footer_logo_info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer_logo_info .footer_brand h1{
+    margin: 0;
+    color: var(--color-2);
+    text-align: center;
+}
+
+.footer_contact{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* =================== parte 2 del Footer =================== */
+.footer_social_links{
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.footer_social_title h3{
+    color: var(--color-white);
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+}
+
+.footer_social_link{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer_social_link img{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    margin: 0;
+}
+
+/* =================== parte 3 del Footer =================== */
+
+
+/* =================== parte 4 del Footer =================== */
+.footer_image{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 5 !important;
+    width: 100%;
+    max-width: 600px;
+}
+
+.footer_image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ------------------------------------------------------------------- 
 * ## animations
 * ------------------------------------------------------------------- */
 

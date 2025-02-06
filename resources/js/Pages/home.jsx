@@ -4,6 +4,7 @@ import LandingBanner from '../Components/LandingBanner';
 import CardLayout from '../Components/CardLayout';
 import WorkSection from '@/Components/WorkSection';
 import CommentsSection from '@/Components/CommentsSection';
+import Footer from '@/Layouts/Footer';
 
 export default function Welcome({  }) {
     return (
@@ -22,6 +23,8 @@ export default function Welcome({  }) {
             <WorkSection />
 
             <CommentsSection />
+
+            <Footer />
         </>
     );
 }
