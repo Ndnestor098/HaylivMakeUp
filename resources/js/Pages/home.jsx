@@ -3,6 +3,7 @@ import Menu from '../Layouts/Menu';
 import LandingBanner from '../Components/LandingBanner';
 import CardLayout from '../Components/CardLayout';
 import WorkSection from '@/Components/WorkSection';
+import CommentsSection from '@/Components/CommentsSection';
 
 export default function Welcome({  }) {
     return (
@@ -19,6 +20,8 @@ export default function Welcome({  }) {
             <CardLayout />
             
             <WorkSection />
+
+            <CommentsSection />
         </>
     );
 }

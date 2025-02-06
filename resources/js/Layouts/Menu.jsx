@@ -7,7 +7,6 @@ export default function Menu({}) {
     useEffect(() => {
         const handleScroll = () => {
             setHasShadow(window.scrollY > 0);
-            console.log(window.scrollY > 0)
         };
     
         window.addEventListener("scroll", handleScroll);
